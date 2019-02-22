@@ -1,0 +1,87 @@
+.container {
+  width: 75%;
+  margin-bottom: 20px;
+}
+
+.jumbotron {
+  background-image: url(banner.jpg);
+  background-size: cover;
+  color: white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 70px 0;
+}
+
+.jumbotron h1 {
+  font-size: 55pt;
+}
+
+/******* image generation and output *******/
+
+img {
+  position: relative;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: black;
+}
+
+.output {
+  position: relative;
+  float: left;
+  margin: 20px;
+}
+
+.output:hover .overlay {
+  opacity: 0.5;
+}
+
+/******* trash icon on top of output *******/
+
+.iconDiv {
+  color: grey;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-trash-o:hover {
+  color: white;
+}
+
+/******* text on image *******/
+
+.text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  font-size: 40px;
+  font-family: "Impact";
+  text-align: center;
+  color: white;
+  text-shadow: black 0px 0px 10px;
+  word-wrap: break-word;
+}
+
+.top {
+  top: 3px;
+}
+
+.bottom {
+  bottom: 3px;
+}
